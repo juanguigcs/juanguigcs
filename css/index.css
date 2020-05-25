@@ -1,0 +1,60 @@
+.text-ticket {
+    color: yellowgreen !important;
+}
+
+body{
+    position: relative;
+
+}
+/* .scroll-area{    
+    position: relative;
+    height: calc(100vh - 200px);
+    overflow-y: scroll;
+    overflow: auto;
+} */
+#header img{
+    width: 100px;
+}
+
+#main .carousel-inner img{
+    max-height: 70vh;
+    object-fit: cover;
+    filter: grayscale(60%);
+}
+
+#carousel{
+    position: relative;
+}
+
+#carousel .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 2;
+    align-items: center;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row{
+    height: 100%;
+}
+#carousel .overlay h1{
+    font-size: 60px;
+}
+
+#footer {
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+    padding-bottom: 4px;
+    padding-top: 2px;
+}
+
+#footer a{
+    color: white;
+}
+
+
+ 
