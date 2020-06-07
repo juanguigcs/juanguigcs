@@ -15,6 +15,9 @@ body{
 #header img{
     width: 100px;
 }
+nav{
+    background: linear-gradient(120deg, rgb(206, 220, 236), #090120);
+}
 
 #main .carousel-inner img{
     max-height: 70vh;
@@ -46,15 +49,53 @@ body{
     font-size: 60px;
 }
 
-#footer {
-    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5372);
+footer {
+    background: linear-gradient(120deg, rgb(206, 220, 236), #090120);
     padding-bottom: 4px;
-    padding-top: 2px;
+    padding-top: 50px;
 }
 
-#footer a{
+footer .footer-navigation, h2,h3,a{
+    color: black;
+}
+
+footer .footer-contacts{
+    color: white;
+}
+#mailFooter{
     color: white;
 }
 
+footer .fa-envelope {
+    color: white;
+}
 
- 
+footer .footer-about{
+    color: white;
+}
+.footer-navigation h3 span {
+    color: #0a1e42;
+  }
+
+.social{
+    /* border: 1px solid red; */
+    margin-right: 20px;  
+  }  
+  .social-link{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-size: 50px 50px;   
+  }
+  .social-link.twiter{
+    background-image: url(../image/twiter.png);    
+  }
+  .social-link.instagram{
+    background-image: url(../image/instagram.png);
+  }
+  .social-link.linkedin{
+    background-image: url(../image/linkedin.png);
+  }
+  .social-link.github{
+    background-image: url(../image/github.png);
+  }
