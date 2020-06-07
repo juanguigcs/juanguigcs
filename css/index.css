@@ -48,6 +48,9 @@ nav{
 #carousel .overlay h1{
     font-size: 60px;
 }
+#carousel .overlay a{
+    color: white;
+}
 
 footer {
     background: linear-gradient(120deg, rgb(206, 220, 236), #090120);
