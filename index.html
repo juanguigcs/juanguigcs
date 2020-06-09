@@ -25,7 +25,15 @@
                     event.preventDefault();
                     // generate the contact number value
                     // this.contact_number.value = Math.random() * 100000 | 0;
-                    emailjs.sendForm('contact_service', 'contact_form', this);
+                    emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function(response) {
+                        alert('Tu correo se ha enviado con exito');
+                        $('#FormControlname').val('');
+                        $('#FormControlEmail').val('');
+                        $('#FormControlText').val('');
+                    }, function(error) {
+                    alert('FAILED...', error);
+                    });                
                 });
             }
         </script>
@@ -251,7 +259,7 @@
                     <form id="contact-form">
                         <div class="form-group">
                             <label for="FormControlname">Déjame tu nombre</label>
-                            <input  name="user_name" type="text" class="form-control" id="FormControlname" required="required" placeholder="pepito">
+                            <input  name="user_name" type="text" class="form-control" id="FormControlname" required="required" placeholder="name">
                         </div>
                         <div class="form-group">
                             <label for="FormControlEmail">Déjame tu <abbr data-toggle="tooltip" title="Verifica bien tu correo">correo</abbr></label>
@@ -259,7 +267,7 @@
                         </div>            
                         <div class="form-group">
                             <label for="FormCOntrolText">¿En que trabajaremos juntos?</label>
-                            <textarea name="message" class="form-control" id="FormCOntrolText" required="required"  rows="3"placeholder="Cuentame la idea a llevar a cabo" ></textarea>
+                            <textarea name="message" class="form-control" id="FormControlText" required="required"  rows="3"placeholder="Cuentame la idea a llevar a cabo" ></textarea>
                         </div>
                         <button type="submit" value="Send" class="btn btn-primary mb-2">Enviar</button>
                     </form>            
